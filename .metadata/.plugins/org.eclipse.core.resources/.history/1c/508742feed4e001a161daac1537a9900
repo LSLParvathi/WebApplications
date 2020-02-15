@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+body
+{
+	background-color:  #34495e; 
+	padding : 100px;
+	 border : 1px solid white;
+}
+firstpage
+{
+	 padding : 70px;
+	 border : 1px solid white;
+}

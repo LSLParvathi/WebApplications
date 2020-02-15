@@ -1,0 +1,19 @@
+@charset "UTF-8";
+body
+{
+	background-color:  orange;
+	color: white;
+	padding : 20%; 
+}
+th
+ {
+ text-align: center;
+ }
+ td
+ {
+ text-align: center;
+ }
+ table
+ {
+ width : 50%;
+ }

@@ -1,0 +1,37 @@
+package com.service;
+
+import java.sql.DriverManager;
+
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.*;
+
+public class Register extends HttpServlet
+{
+
+	protected void doGet(HttpServletRequest req,HttpServletResponse res)
+	{
+		String n = req.getParameter("user");
+		String p = req.getParameter("pass");
+		String m = req.getParameter("mail");
+		String l = req.getParameter("phone");
+		
+		String url = "mysql:/jdbc://localhost:/3306";
+		String  e1 = "root";
+		String  e2 = "12";
+		
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+			Connection con=  DriverManager.getConnection(url,e1,e2);
+			
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		 
+		
+		
+	}
+}

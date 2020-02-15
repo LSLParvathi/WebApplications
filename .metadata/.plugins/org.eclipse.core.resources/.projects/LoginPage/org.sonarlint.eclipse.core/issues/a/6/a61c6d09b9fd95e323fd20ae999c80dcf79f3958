@@ -1,0 +1,17 @@
+
+q
+squid:S106$"9Replace this use of System.out or System.err by a logger.(şË¢éıÿÿÿÿ8Œòƒ.H¯RMAJORZ
+CODE_SMELL
+lsquid:S1161":Add the "@Override" annotation above this method signature(½œ•ÆşÿÿÿÿHµRMAJORZ
+CODE_SMELL
+asquid:S1125"(Remove the literal "true" boolean value.(Û­–Áÿÿÿÿÿ8¿Œÿñƒ.H°RMINORZ
+CODE_SMELL
+`squid:S1989#"+Add a "try/catch" block for "sendRedirect".(‹òÊûÿÿÿÿH®RMINORZVULNERABILITY
+{squid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(÷è¶H²RMINORZ
+CODE_SMELL
+l
+squid:S106"9Replace this use of System.out or System.err by a logger.(Ñœ±ƒ8Œòƒ.H´RMAJORZ
+CODE_SMELL
+`squid:S1989"+Add a "try/catch" block for "sendRedirect".(‡èåğùÿÿÿÿH³RMINORZVULNERABILITY
+lsquid:UselessImportCheck"2Remove this unused import 'java.sql.SQLException'.(ÛïÆŸH±RMINORZ
+CODE_SMELL

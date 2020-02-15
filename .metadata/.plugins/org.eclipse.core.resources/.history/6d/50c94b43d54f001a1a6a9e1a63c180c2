@@ -1,0 +1,58 @@
+<%@ page import="java.sql.*" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+    <table border="1">
+    
+    <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Salary</th> 
+    </tr>
+    <% 
+    
+       String url = "jdbc:mysql://localhost:3306/users";
+       String e1 = "root";
+       String e2 = "12"; 
+       String sql = "select * from employee";
+    
+	try {
+		   
+		Class.forName("com.mysql.jdbc.Driver");
+	    Connection con = DriverManager.getConnection(url,e1,e2);
+	     PreparedStatement ps = con.prepareStatement(sql);  
+		 ResultSet rs = ps.executeQuery(sql);
+	     while(rs.next())
+	     {
+	    	  out.print("***********");
+	     %>
+	     
+	     <tr>
+             <td>hai</td>
+             <td>hai</td>
+             <td>hai</td>
+         </tr>
+	    	 
+	     <%  }
+	} 
+	catch (ClassNotFoundException | SQLException e) {
+			e.printStackTrace();
+	}
+    
+    %>
+     
+    
+    </table>
+    <br>
+    <a href="first.jsp">1</a>
+    <a href="second.jsp">2</a>
+    <a href="second.jsp">3</a>
+    <a href="second.jsp">4</a>
+</body>
+</html>

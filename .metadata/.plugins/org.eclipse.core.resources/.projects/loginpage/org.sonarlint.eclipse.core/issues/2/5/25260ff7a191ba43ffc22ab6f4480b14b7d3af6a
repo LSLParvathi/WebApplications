@@ -1,0 +1,22 @@
+
+vsquid:UselessImportCheck"0Remove this unused import 'java.io.IOException'.(ªº»Úıÿÿÿÿ8•Îû˜„.HŞRMINORZ
+CODE_SMELL
+„squid:UselessImportCheck"CRemove this unused import 'javax.servlet.http.HttpServletResponse'.(Á¨ïë8•Îû˜„.HßRMINORZ
+CODE_SMELL
+ƒsquid:S2095!"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(àø„˜úÿÿÿÿ8…ŒÄ˜„.HàRBLOCKERZBUG
+fsquid:S4925"-Remove this "Class.forName()", it is useless.(¹µÖÁüÿÿÿÿ8…ŒÄ˜„.HáRMAJORZ
+CODE_SMELL
+wsquid:S2095 "HUse try-with-resources or close this "Connection" in a "finally" clause.(ö•¬ğ8…ŒÄ˜„.HâRBLOCKERZBUG
+Ysquid:S2068 " Remove this hard-coded password.(ö•¬ğ8…ŒÄ˜„.HãRBLOCKERZVULNERABILITY
+€squid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(£’³üÿÿÿÿHäRMINORZ
+CODE_SMELL
+_squid:S1148."#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8…ŒÄ˜„.HåRMINORZVULNERABILITY
+qsquid:UselessImportCheck"0Remove this unused import 'java.io.PrintWriter'.(ÓŞÏÛ8Êö™„.HæRMINORZ
+CODE_SMELL
+ƒsquid:UselessImportCheck"BRemove this unused import 'javax.servlet.http.HttpServletRequest'.(ø©¹…8•Îû˜„.HçRMINORZ
+CODE_SMELL
+squid:UselessImportCheck";Remove this unused import 'javax.servlet.http.HttpServlet'.(û÷Å›ÿÿÿÿÿ8•Îû˜„.HèRMINORZ
+CODE_SMELL
+|squid:UselessImportCheck";Remove this unused import 'javax.servlet.ServletException'.(Š‰™Œ8•Îû˜„.HéRMINORZ
+CODE_SMELL
+vsquid:S2095$"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(·¦Ã…8…ŒÄ˜„.HêRBLOCKERZBUG

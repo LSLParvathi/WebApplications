@@ -1,0 +1,4 @@
+browser-choice=1
+browsers=<?xml version\="1.0" encoding\="UTF-8"?>\n<web-browsers current\="0">\n<system/>\n<external location\="/usr/bin/firefox" name\="Firefox"/>\n</web-browsers>
+eclipse.preferences.version=1
+internalWebBrowserHistory=http\://localhost\:8080/loginpage/Resources/jsp/login.jsp|*|http\://localhost\:8080/loginpage/Resources/jsp/login?user\=leela&pass\=1234|*|http\://localhost\:8080/LoginPage/login.jsp|*|file\:///home/user/eclipse-webApplications/LoginPage/WebContent/Avatar.png|*|file\:/home/user/eclipse-webApplications/LoginPage/WebContent/Avatar.png|*|http\://localhost\:8080/Registration/login.jsp|*|

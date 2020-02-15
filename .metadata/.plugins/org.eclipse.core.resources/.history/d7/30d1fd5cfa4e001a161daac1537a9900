@@ -1,0 +1,18 @@
+package com.service;
+
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class Register extends HttpServlet
+{
+
+	protected void doGet(HttpServletRequest req,HttpServletResponse res)
+	{
+		String n = req.getParameter("name");
+		String p = req.getParameter("pass");
+		String m = req.getParameter("");
+		String l = req.getParameter("phone");
+		
+	}
+}

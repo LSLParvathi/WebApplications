@@ -1,0 +1,19 @@
+
+qsquid:UselessImportCheck"0Remove this unused import 'java.sql.Connection'.(¥ËôÖ8®Àô™„.HğRMINORZ
+CODE_SMELL
+]squid:S19890"&Add a "try/catch" block for "forward".(ãìÄ8¹Àš„.HñRMINORZVULNERABILITY
+tsquid:UselessImportCheck"3Remove this unused import 'java.sql.DriverManager'.(“£°8®Àô™„.HòRMINORZ
+CODE_SMELL
+}squid:UselessImportCheck"7Remove this unused import 'java.sql.PreparedStatement'.(òÄ™ƒÿÿÿÿÿ8®Àô™„.HóRMINORZ
+CODE_SMELL
+{squid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(¯ŞÛòHôRMINORZ
+CODE_SMELL
+lsquid:S1161":Add the "@Override" annotation above this method signature(½œ•ÆşÿÿÿÿHõRMAJORZ
+CODE_SMELL
+]squid:S19890"&Add a "try/catch" block for "forward".(ãìÄ8¹Àš„.HöRMINORZVULNERABILITY
+ssquid:UselessImportCheck	"2Remove this unused import 'java.sql.SQLException'.(ÛïÆŸ8®Àô™„.H÷RMINORZ
+CODE_SMELL
+qsquid:UselessImportCheck"0Remove this unused import 'java.io.PrintWriter'.(ÓŞÏÛ8şõÈ•„.HøRMINORZ
+CODE_SMELL
+osquid:UselessImportCheck"/Remove this unused import 'java.sql.ResultSet'.(ˆóÚw8®Àô™„.HùRMINORZ
+CODE_SMELL
