@@ -5,18 +5,13 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Get Employee list</title>
 <link rel="stylesheet" type="text/css" href="../css/first.css">
 </head>
 <body>
+
 <form action="logout"> 
-    <table border="1">
-    
-    <tr>
-    <th>Id</th>
-    <th>Name</th>
-    <th>Salary</th> 
-    </tr>
+     
     <% 
     
     String url = "jdbc:mysql://localhost:3306/users";
@@ -46,7 +41,15 @@
 	      else  
 	      {
 	    	  t = 15;
-	      } 
+	      } %>
+	      <table border="1">
+    <h2 align="center">Page no: <%= a %></h2><br>
+    <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Salary</th> 
+    </tr>
+	      <%
 	      ps.setInt( 1,t);
 	     ResultSet rs         = ps.executeQuery();
 		  
@@ -65,11 +68,8 @@
 	} 
 	catch (ClassNotFoundException | SQLException e) {
 			e.printStackTrace();
-	}
-    
-    %>
-     
-    
+	} 
+    %> 
     </table>
     <br>
     <a href="/Pagination/Resourses/jsp/first.jsp">1</a> 
