@@ -20,7 +20,7 @@
          }
           
          %> 
-         <h2 align="center">Welcome <%= s %></h2>  
+         <h2 align="center"> Welcome <%= s%></h2>  
          <form action="logout"> 
           <%
       	response.setHeader("Cache-Control","no-cache,no-store,must-revalidate"); 
@@ -89,7 +89,6 @@
                <div align="center"> 
                <input type="submit" value="logout" >
                </div>	
-               </form>	    
-               
+               </form> 
          </body>
 </html>
