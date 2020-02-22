@@ -8,6 +8,7 @@ import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebFilter;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletResponse;
 
 import com.controller.logindao;
@@ -17,15 +18,16 @@ public class DoFilter implements Filter {
 
      
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException 
-	{
+	{ 
 		
 		String n = request.getParameter("user");
-		String p = request.getParameter("pass");
+		String p = request.getParameter("pass"); 
 		
 		logindao d = new logindao();
 		
 		if(d.check(n, p) == true)
 		{
+			 
 		
 		if(n.equals("leela") && p.equals("1234"))
 		{

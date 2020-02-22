@@ -9,10 +9,21 @@
             <link rel="stylesheet" href="../css/welcome.css" type="text/css">
     </head>
          <body >
+         <%
+         String s =  request.getParameter("user");
+         String temp = null;
+         Cookie ck[] = request.getCookies();
+         for(Cookie c : ck)
+         {
+        	 if(c.getName().equals("us"))
+        		   temp =  s; 
+         }
+          
+         %> 
+         <h2 align="center">Welcome <%= s %></h2>  
          <form action="logout"> 
           <%
-      	response.setHeader("Cache-Control","no-cache,no-store,must-revalidate");
-         	 
+      	response.setHeader("Cache-Control","no-cache,no-store,must-revalidate"); 
                if(session.getAttribute("username") == null)
                {
             	  response.sendRedirect("login.jsp"); 
@@ -26,8 +37,8 @@
           </tr> 
                <%  
                       String url = "jdbc:mysql://localhost:3306/users";
-       		          String e1 = "root";
-       		          String e2 = "12";
+       		          String e1  = "root";
+       		          String e2  = "12";
        		  
                       Class.forName("com.mysql.jdbc.Driver");
                       Connection con = DriverManager.getConnection(url,e1,e2);
@@ -75,8 +86,9 @@
        		    
        		  </table>
                <br><br>
-               
-               <input type="submit" value="logout">	
+               <div align="center"> 
+               <input type="submit" value="logout" >
+               </div>	
                </form>	    
                
          </body>

@@ -11,6 +11,7 @@ import java.sql.SQLException;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -21,13 +22,15 @@ import com.mysql.*;
  
 @WebServlet("/Resources/jsp/login")
 public class login extends HttpServlet 
-{
-	 
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
+{ 
+	 public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
 	{
   
 		String n = request.getParameter("user");
 		String p = request.getParameter("pass");
+		
+		Cookie ck = new Cookie("us",n);
+		response.addCookie(ck);
 		
 		HttpSession session = request.getSession();
 			 session.setAttribute("username", n);
@@ -47,8 +50,5 @@ public class login extends HttpServlet
 		RequestDispatcher rd=request.getRequestDispatcher("welcome.jsp");
 		rd.forward(request, response);
 		 
-	}
-
-	 
-
+	} 
 }
