@@ -16,7 +16,7 @@
          for(Cookie c : ck)
          {
         	 if(c.getName().equals("us"))
-        		   temp =  s; 
+        		   temp = s; 
          }
           
          %> 

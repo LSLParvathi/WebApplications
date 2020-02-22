@@ -29,16 +29,14 @@ public class Register extends HttpServlet
 		
 		try
 		{
-			Class.forName("com.mysql.jdbc.Driver");
-			 
+			Class.forName("com.mysql.jdbc.Driver"); 
 			Connection con=  DriverManager.getConnection(url,e1,e2);
 			
 			PreparedStatement ps = con.prepareStatement(sql);
 			ps.setString(1,n);
 			ps.setString(2,p);
 			ps.setString(3,m);
-			ps.setString(4,l);
-			
+			ps.setString(4,l); 
 			ps.executeUpdate();	
 			
 			con.close();
@@ -48,7 +46,6 @@ public class Register extends HttpServlet
  			e.printStackTrace();
 		}
 		 
-		res.sendRedirect("login.jsp");
-		
+		res.sendRedirect("login.jsp"); 
 	}
 }
