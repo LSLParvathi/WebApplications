@@ -20,7 +20,7 @@
          }
           
          %> 
-         <h2 align="center"> Welcome <%= s%></h2>  
+         <h2 align="center"> Welcome <%=s%></h2>  
          <form action="logout"> 
           <%
       	response.setHeader("Cache-Control","no-cache,no-store,must-revalidate"); 
@@ -31,9 +31,9 @@
              %>
           <table border="1">
           <tr>
-          	<th>name</th>
-          	<th>mail</th>
-          	<th>phone</th>
+          	<th>Name</th>
+          	<th>Mail</th>
+          	<th>Phone</th>
           </tr> 
                <%  
                       String url = "jdbc:mysql://localhost:3306/users";
