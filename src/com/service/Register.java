@@ -30,7 +30,7 @@ public class Register extends HttpServlet
 		try
 		{
 			Class.forName("com.mysql.jdbc.Driver"); 
-			Connection con=  DriverManager.getConnection(url,e1,e2);
+			Connection con =  DriverManager.getConnection(url,e1,e2);
 			
 			PreparedStatement ps = con.prepareStatement(sql);
 			ps.setString(1,n);

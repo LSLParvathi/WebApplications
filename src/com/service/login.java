@@ -9,6 +9,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.Cookie;
@@ -34,6 +35,11 @@ public class login extends HttpServlet
 		
 		HttpSession session = request.getSession();
 			 session.setAttribute("username", n);
+			 
+			 
+	   ServletContext c = getServletContext();
+	   int loggedInCount = (Integer) c.getAttribute("userscount");
+	   int currentUsers  = (Integer) c.getAttribute("currentusers");
 		
 		String a = (String) request.getAttribute("check");
 		
@@ -49,6 +55,9 @@ public class login extends HttpServlet
 		}
 		RequestDispatcher rd=request.getRequestDispatcher("welcome.jsp");
 		rd.forward(request, response);
+		
+		System.out.println("No of users logged in: "+loggedInCount);
+		System.out.println("No of current users: "+currentUsers);
 		 
 	} 
 }
