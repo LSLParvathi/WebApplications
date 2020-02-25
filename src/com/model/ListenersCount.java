@@ -1,16 +1,8 @@
 package com.model;
 
 import javax.servlet.ServletContext;
-import javax.servlet.ServletContextAttributeEvent;
-import javax.servlet.ServletContextAttributeListener;
-import javax.servlet.ServletContextEvent;
-import javax.servlet.ServletContextListener;
-import javax.servlet.ServletRequestAttributeEvent;
-import javax.servlet.ServletRequestAttributeListener;
-import javax.servlet.ServletRequestEvent;
-import javax.servlet.ServletRequestListener;
+ 
 import javax.servlet.annotation.WebListener;
-import javax.servlet.http.HttpSessionActivationListener;
 import javax.servlet.http.HttpSessionEvent;
 import javax.servlet.http.HttpSessionListener;
 
@@ -36,7 +28,7 @@ public class ListenersCount implements HttpSessionListener {
      }
 
 	 
-    public void sessionDestroyed(HttpSessionEvent arg0) 
+    public void sessionDestroyed(HttpSessionEvent event) 
     { 
     	CurrentUsers--;
     	cnt.setAttribute("currentusers", CurrentUsers);
